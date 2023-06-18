@@ -5,9 +5,13 @@ const From  = () => {
     <div>
         
 
-        <form action="">
+        <form action="" className=''>
  <h1>Sign in</h1>
+<div>   
+<h3>New User?</h3>  <span>create an account</span>
 
+
+</div>
 
 
 
