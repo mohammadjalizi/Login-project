@@ -7,7 +7,7 @@ const From  = () => {
 
         <form action="" className='Fromcard'>
  <h1>Sign in</h1>
-<div>   
+<div className=' flex'>   
 <h3>New User?</h3>  <span>create an account</span>
 
 
