@@ -1,20 +1,18 @@
 .Fromcard{
-background-color: #242731;
-
-
-color:  #FFFFFF;
-height: 701px;
-width: 399px;
-/* left: 294px;
-top: 214px; */
-border-radius: 30px;
+    background-color: #242731;
+    font-size: xx-small;
+    color: #FFFFFF;
+    height: 551px;
+    width: 399px;
+    margin-left: 30px;
+    border-radius: 30px;
 }
 
 .btn{
     background-color: #4D3BC9;
     width: 100% ;
-    height: 54px;
-    margin-top: 6px;
+    height: 50px;
+    margin-top: 3px;
     border-radius: 8px;
 }
 h1{
