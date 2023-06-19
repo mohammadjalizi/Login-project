@@ -12,7 +12,6 @@ const From  = () => {
          <h1>Sign up</h1>
           <div className=' flex'>  
              <h3>already a user</h3>  <span className=' text-blue-500' >login</span>
-
       </div>
 <div>
  
