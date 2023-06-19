@@ -1,5 +1,5 @@
 import './App.css';
-import From from './asaste/From ';
+import From from './asaste/sign-up/From ';
 
 
 function App() {
