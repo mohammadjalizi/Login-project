@@ -5,7 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(./img/photo.jpg);
+  background: url(./img/Signup.jpg);
+  background-size: 100%;
+ 
 }
 
 code {
