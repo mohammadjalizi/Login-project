@@ -1,10 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import From from './asaste/From ';
+import From from './asaste/sign-up/From ';
+
+
 function App() {
   return (
     <div className="App">
-<From/>
+    
+
+           <From/>
+     
+
     </div>
   );
 }

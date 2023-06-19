@@ -1,0 +1,32 @@
+.Fromcard{
+background-color: #242731;
+margin: 100px 300px;
+color:  #FFFFFF;
+height: 701px;
+width: 499px;
+left: 294px;
+top: 214px;
+border-radius: 30px;
+}
+
+.btn{
+    background-color: #4D3BC9;
+    width: 385px;
+    height: 54px;
+    margin-top: 6px;
+    border-radius: 8px;
+}
+h1{
+  
+width: 180px;
+height: zzpx;
+left: 351px;
+top: 281px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 50px;
+
+margin-top: 0;
+}
+
