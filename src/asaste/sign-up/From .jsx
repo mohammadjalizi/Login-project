@@ -6,7 +6,7 @@ const From  = () => {
     <div>
         
 
-     <form action="" className='Fromcard  shadow-2xl rounded-2xl  '>
+     <form action="" className='Fromcard my-20  shadow-2xl rounded-2xl  '>
        <br/>
        <div  className='  mr-7 ml-7 text-left'>    
          <h1>Sign up</h1>

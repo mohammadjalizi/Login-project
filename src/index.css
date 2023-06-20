@@ -8,6 +8,14 @@ body {
   background: url(./img/Signup.jpg);
   background-size: 100%;
  
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;
+
+ 
+}
+body::-webkit-scrollbar{
+  display: none;
 }
 
 code {
