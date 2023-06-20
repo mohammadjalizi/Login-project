@@ -19,7 +19,7 @@ const From  = () => {
         <label  className='twoCol'>  Firstname  </label>
         <input className=' rounded-xl bg-slate-600 p-2 w-full mt-5 ' type='text'  placeholder=' ali'></input>
          <br /><br/>
-         <label  >  Lastname  </label>
+         <label  className='twoCol' >  Lastname  </label>
          <input className=' rounded-xl bg-slate-600 p-2 w-full mt-5 ' type='text'  placeholder=' gholizade'></input>
          <br/>
           <label >  Email  </label>
