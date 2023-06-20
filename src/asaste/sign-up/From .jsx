@@ -12,25 +12,26 @@ const From  = () => {
          <h1>Sign up</h1>
           <div className=' flex'>  
              <h3>already a user</h3>  <span className=' text-blue-500' >login</span>
-
       </div>
 <div>
  
 
-        <label >  Firstname  </label>
+        <label  className='twoCol'>  Firstname  </label>
         <input className=' rounded-xl bg-slate-600 p-2 w-full mt-5 ' type='text'  placeholder=' ali'></input>
          <br /><br/>
-         <label >  Lastname  </label>
+         <label  className='twoCol' >  Lastname  </label>
          <input className=' rounded-xl bg-slate-600 p-2 w-full mt-5 ' type='text'  placeholder=' gholizade'></input>
          <br/>
           <label >  Email  </label>
           <input className=' rounded-xl bg-slate-600 p-2 w-full mt-5 ' type='text'  placeholder=' ali'></input>
+           <br/>
            <label>
             Password:</label>
             <input className=' rounded-xl bg-slate-600 p-2 w-full mt-5 ' type="password" name="password" />
-            <br/><br/><br/>
-            <button className='btn' type="submit">continue</button>
-            <p>or continue with</p>
+            <br/><br/>
+            <button className='btn' type="submit">continue</button><br/>
+            
+            <p>or continue with</p><br/>
             <button className='btn' type="submit">google</button>
    </div>
 
