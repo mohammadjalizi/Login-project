@@ -11,7 +11,7 @@ const From  = () => {
        <div  className='  mr-7 ml-7 text-left'>    
          <h1>Sign up</h1>
           <div className=' flex'>   
-             <h3>login</h3>  <span className=' text-blue-500' >login</span>
+             <h3>login</h3>  <span className='   cursor-pointer  hover:text-2xl  ml-10  text-blue-500' >login</span>
 
       </div>
 <div>
