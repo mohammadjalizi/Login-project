@@ -8,7 +8,7 @@ const From  = () => {
    const[password,setPassword]=useState('')
    const[users,setUsers]=useState([])
 
-   const clickHaldler=async(event)=>{
+   const clickHaldler=(event)=>{
     event.preventDefault()
     let userInfo={
         username,
@@ -18,9 +18,10 @@ const From  = () => {
  
 
 
-const responses= await fetch('http://localhost:8000/login',
+const responses=  fetch('http://localhost:8000/login',
  {
     method:'POST',
+    mode:'no-cors',
     headers: {
       'Content-Type': 'application/json',
       'Accept': 'application/json'
@@ -35,7 +36,7 @@ const responses= await fetch('http://localhost:8000/login',
     <div>
         
 
-     <form action="" className='Fromcard my-20  shadow-2xl rounded-2xl  '>
+     <form onSubmit={clickHaldler} action="" className='Fromcard my-20  shadow-2xl rounded-2xl  '>
        <br/>
        <div  className='  mr-7 ml-7 text-left'>    
          <h1>Sign up</h1>
@@ -58,7 +59,7 @@ const responses= await fetch('http://localhost:8000/login',
             Password:</label>
             <input className=' rounded-xl bg-slate-600 p-2 w-full mt-5 ' type="password" name="password" value={password} onChange={(event)=>setPassword(event.target.value)}></input>
             <br/><br/>
-            <button className='btn' type="submit"  onSubmit={clickHaldler}>continue</button><br/>
+            <button className='btn' type="submit"  >continue</button><br/>
             
             <p>or continue with</p><br/>
             <button className='btn' type="submit">google</button>
