@@ -18,7 +18,7 @@ const From  = () => {
  
 
 
-const responses=  fetch('http://localhost:8000/login',
+const responses=  fetch('http://localhost:8000/register',
  {
     method:'POST',
     mode:'no-cors',
