@@ -1,7 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import './From.css';
 const From  = () => {
+
+  const[username,setUsername]=useState('');
+
+   const[password,setPassword]=useState('')
+   const[users,setUsers]=useState([])
+
+   const clickHaldler=async(event)=>{
+    event.preventDefault()
+    let userInfo={
+        username,
+        password
+    }
+
+ 
+
+
+const responses= await fetch('http://localhost:8000/login',
+ {
+    method:'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    },
+    body:JSON.stringify(userInfo)
+    })
+ .then(response=>console.log(response))
+ userInfo={}
+ 
+}
   return (
     <div>
         
@@ -16,8 +45,8 @@ const From  = () => {
 <div>
  
 
-        <label  className='twoCol'>  Firstname  </label>
-        <input className=' rounded-xl bg-slate-600 p-2 w-full mt-5 ' type='text'  placeholder=' ali'></input>
+        <label  className='twoCol'>  Username  </label>
+        <input className=' rounded-xl bg-slate-600 p-2 w-full mt-5 ' type='text'  placeholder=' ali' value={username} onChange={(event)=>setUsername(event.target.value)}></input>
          <br /><br/>
          <label  className='twoCol' >  Lastname  </label>
          <input className=' rounded-xl bg-slate-600 p-2 w-full mt-5 ' type='text'  placeholder=' gholizade'></input>
@@ -27,9 +56,9 @@ const From  = () => {
            <br/>
            <label>
             Password:</label>
-            <input className=' rounded-xl bg-slate-600 p-2 w-full mt-5 ' type="password" name="password" />
+            <input className=' rounded-xl bg-slate-600 p-2 w-full mt-5 ' type="password" name="password" value={password} onChange={(event)=>setPassword(event.target.value)}></input>
             <br/><br/>
-            <button className='btn' type="submit">continue</button><br/>
+            <button className='btn' type="submit"  onSubmit={clickHaldler}>continue</button><br/>
             
             <p>or continue with</p><br/>
             <button className='btn' type="submit">google</button>
